@@ -9,6 +9,9 @@ spec:
     repoURL: https://github.com/sulo15700/helm-guestbook.git
     targetRevision: HEAD
     path: .
+    helm:
+      valuesObject:
+        fullnameOverride: guestbook-ui
   destination:
     server: https://kubernetes.default.svc
     namespace: guestbook
